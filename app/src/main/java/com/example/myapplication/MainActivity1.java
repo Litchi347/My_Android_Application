@@ -79,4 +79,5 @@ public class MainActivity1 extends AppCompatActivity {
         TextView out = findViewById(R.id.textView3);
         out.setText("Hello " + str);
     }
+    // 添加了一行内容
 }
