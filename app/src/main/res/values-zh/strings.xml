@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="birname">鲍勃:</string>
+    <string name="congratulations">
+    亲爱的安：
+        展信安。此刻握着笔，忽然想起去年你生日时，我们在凌晨四点偷溜到天台，裹着同一件外套等日出 —— 你冻得鼻子发红，却盯着渐亮的天际说 “原来晨光真的会唱歌”。原来不知不觉，我们已经一起收集了这么多 “会唱歌” 的时刻。
+        今天想告诉你三件小事：
+            ❶ 你总说自己 “记性差”，却记得我随口提过的过敏食物、收藏了七年的旧 CD；
+            ❷ 你笑起来时左边有个小梨涡，上次在医院陪我打针，这个梨涡让消毒水味道都变甜了；
+            ❸ 谢谢你把 “慢慢来” 变成我的勇气，比如现在，我终于敢在生日祝福里说 ——“你不是流星，不需要短暂耀眼；你是月光，是我知道永远会在的温柔。”
+        新的一岁，愿你的咖啡永远暖到刚好入口，想读的书永远翻到心动的章节，而我永远是你回头就能看见的同路人。
+        生日快乐，我的 “晨光收藏家”。
+    </string>
+
+    <string name="input_tip" >请输入您的学号</string>
+    <string name="but_index" >登录</string>
+
+    <string name="bmi_label" >BMI计算</string>
+    <string name="height" >身高</string>
+    <string name="weight" >体重</string>
+    <string name="input_tip1" >请输入您的身高（米）</string>
+    <string name="input_tip2" >请输入您的体重（千克）</string>
+    <string name="but_index1" >计算</string>
+    <string name="bmi_results" >保持合理饮食，享受健康生活</string>
+</resources>

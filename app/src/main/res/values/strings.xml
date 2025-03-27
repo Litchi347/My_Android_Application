@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="birname">Bob:</string>
+    <string name="congratulations">
+    Hey [Name],
+        I’m writing this at 2:17 AM because I know you’ll read it first thing when you wake up. Last week, you found my old notebook from 2019 and laughed at how I’d scribbled “[Name]’s laugh sounds like windchimes” — well, it still does. Especially when you’re teasing me about my terrible plant-parenting skills.
+    Three things I want you to carry with you this year:
+        ✦ The way you leave sticky notes with poetry on my fridge? That’s how you love, and it’s so you.
+        ✦ Remember when we got lost in Kyoto and you said “getting lost is just a story in disguise”? I hope this year gives you a thousand more beautiful detours.
+        ✦ You once told me you feel “invisible” on your birthday. But to me, you’re the person who makes every room brighter — not by trying, just by existing.
+        This is your year to sleep in late, say “yes” to the weird adventures, and finally finish that painting of the sea (I bought you new blue pigments, they’re in the drawer). And if you ever doubt how much you’re loved? Just look at the date — 3.14. Pi day. Infinite, never-ending, just like my gratitude for you.
+    Happy birthday, my favorite chapter in every story.
+    </string>
+
+    <string name="stunum" translatable="false">42311029</string>
+
+    <string name="label_android" translatable="false">Hello android</string>
+    <string name="input_tip">input your name</string>
+    <string name="but_index" >Button</string>
+
+    <string name="bmi_label" >BMI_Calaulate</string>
+    <string name="height"> height</string>
+    <string name="weight" >weight</string>
+    <string name="input_tip1" >Please enter your height!(m)</string>
+    <string name="input_tip2" >Please enter your weight!(kg)</string>
+    <string name="but_index1" >ENTER</string>
+    <string name="bmi_results" >Maintain a reasonable diet and enjoy a healthy life</string>
+
+</resources>
