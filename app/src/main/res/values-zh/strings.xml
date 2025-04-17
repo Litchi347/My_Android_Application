@@ -23,4 +23,20 @@
     <string name="input_tip2" >请输入您的体重（千克）</string>
     <string name="but_index1" >计算</string>
     <string name="bmi_results" >保持合理饮食，享受健康生活</string>
+    <string name="but1">得一分</string>
+    <string name="but2">得两分</string>
+    <string name="but3">得三分</string>
+    <string name="reset">重置</string>
+    <string name="inp_RMB">请输入人民币</string>
+    <string name="rs">你好</string>
+    <string name="exchange_WON">韩元</string>
+    <string name="exchange_DOLLAR">美元</string>
+    <string name="save">保存</string>
+    <string name="title">进球得分系统</string>
+    <string name="score_a_1">得三分</string>
+    <string name="score_a_2">得两分</string>
+    <string name="score_a_3">自由得分</string>
+    <string name="score_b_1">得三分</string>
+    <string name="score_b_2">自由得分</string>
+    <string name="score_b_3">得两分</string>
 </resources>

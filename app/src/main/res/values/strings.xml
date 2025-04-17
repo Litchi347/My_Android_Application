@@ -16,14 +16,45 @@
 
     <string name="label_android" translatable="false">Hello android</string>
     <string name="input_tip">input your name</string>
-    <string name="but_index" >Button</string>
+    <string name="but_index">Button</string>
 
-    <string name="bmi_label" >BMI_Calaulate</string>
+    <string name="bmi_label">BMI_Calaulate</string>
     <string name="height"> height</string>
-    <string name="weight" >weight</string>
-    <string name="input_tip1" >Please enter your height!(m)</string>
-    <string name="input_tip2" >Please enter your weight!(kg)</string>
-    <string name="but_index1" >ENTER</string>
-    <string name="bmi_results" >Maintain a reasonable diet and enjoy a healthy life</string>
+    <string name="weight">weight</string>
+    <string name="input_tip1">Please enter your height!(m)</string>
+    <string name="input_tip2">Please enter your weight!(kg)</string>
+    <string name="but_index1">ENTER</string>
+    <string name="bmi_results">Maintain a reasonable diet and enjoy a healthy life</string>
+
+    <string name="team1_label" translatable="false">TeamA</string>
+    <string name="score" translatable="false">0</string>
+    <string name="but1">+1 POINTS</string>
+    <string name="but2">+2 POINTS</string>
+    <string name="but3">+3 POINTS</string>
+    <string name="reset">RESET</string>
+
+    <string name="inp_RMB">INPUT RMB</string>
+    <string name="rs">Hello</string>
+    <string name="exchange_WON">win</string>
+    <string name="exchange_DOLLAR">dollar</string>
+    <string name="exchange_YEN" translatable="false">yen</string>
+    <string name="config" translatable="false">CONFIG</string>
+    <string name="to_dollar" translatable="false">dollar</string>
+    <string name="to_won" translatable="false">won</string>
+    <string name="to_yen" translatable="false">yen</string>
+    <string name="save">save</string>
+
+    <string name="title">CourtCounter:</string>
+    <string name="team_a_label" translatable="false">Team A</string>
+    <string name="team_b_label" translatable="false">Team B</string>
+    <string name="score_a" translatable="false">0</string>
+    <string name="score_b" translatable="false">0</string>
+    <string name="score_a_1">+3 POINTS</string>
+    <string name="score_a_2">+2 POINTS</string>
+    <string name="score_a_3">+1 POINTS</string>
+    <string name="score_b_1">+3 POINTS</string>
+    <string name="score_b_2">+2 POINTS</string>
+    <string name="score_b_3">+1 POINTS</string>
+
 
 </resources>
