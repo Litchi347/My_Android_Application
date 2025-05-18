@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 
 import androidx.activity.EdgeToEdge;
@@ -31,6 +32,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
     private static final String TAG = "CustomListActivity";
     Handler handler;
     private ListView mylist;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,8 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
                     mylist.setAdapter(adapter2);
 //                    mylist.setOnItemClickListener(CustomListActivity.this);
 
+//                    // 隐藏进度条
+//                    progressBar.setVisibility(View.GONE);
                 }
 
                 super.handleMessage(msg);
@@ -83,22 +87,11 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
 
         MyAdapter myAdapter = new MyAdapter(this, R.layout.list_item, listItems);
 
+//        progressBar = findViewById(R.id.progressBar);
+
         mylist = findViewById(R.id.mylist2);
         mylist.setAdapter(myAdapter);
-        mylist.setOnItemClickListener(this);
-
-//        mylist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Log.i(TAG, "onItemClick: 2222222"+i);
-//                Object itemAtPosition = mylist.getItemAtPosition(i);
-//                HashMap<String, String> map = (HashMap<String, String>) itemAtPosition;
-//                String titleStr = map.get("ItemTitle");
-//                String detailStr = map.get("ItemDetail");
-//                Log.i(TAG, "onItemClick: titleStr=" + titleStr);
-//                Log.i(TAG, "onItemClick: detailStr=" + detailStr);
-//            }
-//        });
+        mylist.setOnItemClickListener(this);    // 设置监听器，通过实现onItemClick方法来处理点击事件
 
         // 启动线程
         new Thread(() -> {
@@ -180,7 +173,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
 
     }
 }
-//
+//    // 处理长按事件
 //    @Override
 //    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
 //        Log.i(TAG, "onItemLongClick: ");
