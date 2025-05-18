@@ -18,18 +18,7 @@
         <activity
             android:name=".RecyclerActivity"
             android:exported="false" />
-        <activity
-            android:name=".list_item"
-            android:exported="false" />
-        <activity
-            android:name=".RecyclerView"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".MainListActivity"
             android:exported="true">
