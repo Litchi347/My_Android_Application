@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -147,6 +148,17 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
         Log.i(TAG, "onItemClick: detailStr=" + detailStr);
 
         // 打开新的窗口
+        Intent intent = new Intent(CustomListActivity.this, RateCalcActivity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtra("currency", titleStr);
+        intent.putExtra("rate", detailStr);
+//        bundle.putString("currency", titleStr);
+//        bundle.putString("rate", detailStr);
+//        intent.putExtras(bundle);
+        startActivity(intent);
+
+
+
 //        AlertDialog.Builder builder = new AlertDialog.Builder(this);
 //        builder.setTitle("提示")
 //        .setMessage("请确认是否删除当前数据")
@@ -164,12 +176,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
 //                }).setNegativeButton("否",null);
 //        builder.create().show();
 //
-//        Intent intent = new Intent(CustomListActivity.this, RateCalcActivity.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putString("currency", titleStr);
-//        bundle.putString("rate", detailStr);
-//        intent.putExtras(bundle);
-//        startActivity(intent);
+
 
     }
 }
