@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -9,11 +9,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -32,8 +32,8 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
     private static final String TAG = "CustomListActivity";
     Handler handler;
     private ListView mylist;
-    ProgressBar progressBar;
-
+//    ProgressBar progressBar;
+    private MyAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +77,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
                     mylist.setAdapter(adapter2);
 //                    mylist.setOnItemClickListener(CustomListActivity.this);
 
-//                    // 隐藏进度条
+                    // 隐藏进度条
 //                    progressBar.setVisibility(View.GONE);
                 }
 
@@ -141,36 +141,29 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
         Log.i(TAG, "onItemClick: detailStr=" + detailStr);
 
         // 打开新的窗口
-        Intent intent = new Intent(CustomListActivity.this, RateCalcActivity.class);
-        Bundle bundle = new Bundle();
-        intent.putExtra("currency", titleStr);
-        intent.putExtra("rate", detailStr);
-//        bundle.putString("currency", titleStr);
-//        bundle.putString("rate", detailStr);
-//        intent.putExtras(bundle);
-        startActivity(intent);
+//        Intent intent = new Intent(CustomListActivity.this, RateCalcActivity.class);
+//        Bundle bundle = new Bundle();
+//        intent.putExtra("currency", titleStr);
+//        intent.putExtra("rate", detailStr);
+////        bundle.putString("currency", titleStr);
+////        bundle.putString("rate", detailStr);
+////        intent.putExtras(bundle);
+//        startActivity(intent);
 
+        // 删除数据项
+//         adapter.remove(mylist.getItemAtPosition(position));
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("提示")
+            .setMessage("请确认是否删除当前数据")
+            .setPositiveButton("是",new DialogInterface.OnClickListener() {
 
-
-//        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//        builder.setTitle("提示")
-//        .setMessage("请确认是否删除当前数据")
-//                .setPositiveButton("是",new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        Log.i(TAG, "onClick: 对话框事件处理");
-//                        myAdapter.remove((HashMap<String,String>)mylist.getItemAtPosition(position)); // 删除当前项
-////
-////                        // 删除当前项
-////                        ListItems.remove(position);
-////                        // 更新适配器
-////                        listItemAdapter.notifyDataSetChanged();
-//                    }
-//                }).setNegativeButton("否",null);
-//        builder.create().show();
-//
-
-
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Log.i(TAG, "onClick: 对话框事件处理");
+                    adapter.remove((HashMap<String,String>)mylist.getItemAtPosition(position)); // 删除当前项
+                    }
+                }).setNegativeButton("否",null);
+        builder.create().show();
     }
 }
 //    // 处理长按事件
