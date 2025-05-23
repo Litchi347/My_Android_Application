@@ -1,13 +1,20 @@
 package com.example.myapplication;
 
 public class RateItem {
+    private int id;
     private String name;
     private float rate;
 
+    public RateItem(){
 
+    }
     public RateItem(String name, float rate) {
         this.name = name;
         this.rate = rate;
+    }
+
+    public RateItem(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -16,14 +23,6 @@ public class RateItem {
 
     public float getRate() {
         return rate;
-    }
-
-    @Override
-    public String toString() {
-        return "RateItem{" +
-                "name='" + name + '\'' +
-                ", rate='" + rate + '\'' +
-                '}';
     }
 
     public String get(String itemTitle) {

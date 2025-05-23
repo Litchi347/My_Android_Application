@@ -49,3 +49,4 @@ public class MyAdapter extends ArrayAdapter<HashMap<String, String>> {
         return itemView;
     }
 }
+
