@@ -33,8 +33,8 @@ public class MyItemAdapter extends ArrayAdapter<RateItem> {
         TextView title = itemView.findViewById(R.id.itemTitle);
         TextView detail = itemView.findViewById(R.id.itemDetail);
 
-        title.setText("币种" + item.get("ItemTitle"));
-        detail.setText("汇率" + item.get("ItemDetail"));
+        title.setText("币种：" + item.get("ItemTitle"));
+        detail.setText("汇率：" + item.get("ItemDetail"));
 
         return itemView;
     }

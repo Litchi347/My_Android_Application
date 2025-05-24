@@ -133,6 +133,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
                     // 保存到数据库
                     RateManager manager = new RateManager(CustomListActivity.this);
                     manager.addAll(newRateItems); // 将数据写入数据库
+                    Log.i(TAG, "数据库更新成功：保存了" +  newRateItems.size() + "条数据");
 
                     // 隐藏进度条
                     progressBar.setVisibility(View.GONE);
