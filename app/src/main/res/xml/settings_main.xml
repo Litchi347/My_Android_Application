@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/set_group1_label">
+        <SwitchPreference
+            android:key="@string/set_switch1_key"
+            android:title="@string/set_switch1_label"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:key="@string/set_list_key"
+            android:title="@string/set_list_label"
+            android:entries="@array/setting_list_title"
+            android:entryValues="@array/setting_list_value"
+            android:summary="This is summary"
+            android:defaultValue="daily"
+            android:dependency="@string/set_switch1_key"/>
+
+        <EditTextPreference
+            android:key="@string/set_text1_key"
+            android:title="@string/set_text1_label"
+            android:inputType="number"
+            android:defaultValue="1"
+            android:selectAllOnFocus="true"
+            android:dependency="@string/set_switch1_key"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_group2_label">
+
+        <CheckBoxPreference
+            android:key="@string/set_checkbox1_key"
+            android:title="@string/set_checkbox1_label"
+            android:defaultValue="false"/>
+        <EditTextPreference
+            android:key="@string/set_text2_key"
+            android:title="@string/set_text2_label"
+            android:inputType="text"
+            android:defaultValue="Hello"
+            android:selectAllOnFocus="false"
+            android:dependency="@string/set_checkbox1_key"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

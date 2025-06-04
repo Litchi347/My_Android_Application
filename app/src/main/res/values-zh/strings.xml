@@ -39,4 +39,17 @@
     <string name="score_b_1">得三分</string>
     <string name="score_b_2">自由得分</string>
     <string name="score_b_3">得两分</string>
+
+    <string name="Settings_title">配置页面</string>
+
+    <string name="set_switch1_label">开关项</string>
+    <string name="set_checkbox1_label">复选项</string>
+    <string name="set_list_label">列表项</string>
+    <string name="set_text1_label">选项1</string>
+    <string name="set_text2_label">选项2</string>
+    <string name="set_group1_label">分组1</string>
+    <string name="set_group2_label">分组2</string>
+
+
+
 </resources>
