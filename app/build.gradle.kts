@@ -40,6 +40,9 @@ dependencies {
     implementation("org.jsoup:jsoup:1.17.2")
     implementation("androidx.recyclerview:recyclerview:1.2.0")
 
+    implementation("androidx.viewpager:viewpager:1.0.0")
+    implementation("com.google.android.material:material:1.12.0")
+
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }

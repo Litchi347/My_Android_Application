@@ -56,5 +56,9 @@
     <string name="score_b_2">+2 POINTS</string>
     <string name="score_b_3">+1 POINTS</string>
 
+    <string name="label_first" translatable="false">label_first</string>
+    <string name="label_second" translatable="false">label_second</string>
+    <string name="label_third" translatable="false">label_third</string>
+
 
 </resources>
