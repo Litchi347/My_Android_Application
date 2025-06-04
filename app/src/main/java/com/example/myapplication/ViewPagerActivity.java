@@ -32,8 +32,4 @@ public class ViewPagerActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
     }
-
-    public CharSequence getPageTitle(int position) {
-        return "Title" + position;
-    }
 }

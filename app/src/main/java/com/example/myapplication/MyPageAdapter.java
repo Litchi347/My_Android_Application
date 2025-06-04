@@ -23,4 +23,8 @@ public class MyPageAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 3; // Total number of pages
     }
+
+    public CharSequence getPageTitle(int position) {
+        return "Title" + position;
+    }
 }
